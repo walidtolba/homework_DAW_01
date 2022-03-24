@@ -1,0 +1,112 @@
+/* Import Roboto */
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+section {
+  position: fixed;
+  height: 100vh;
+}
+
+h2 {
+  padding: 5px;
+  margin: 5px;
+  color: darkcyan;
+  font-size: 15px;
+}
+
+.time {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.highlighted {
+  background-color: #ccc;
+}
+
+/* Header */
+
+.header {
+  background-color: #ccc;
+  height: 12vh;
+}
+
+.logo {
+  float: left;
+  width: 56px;
+  height: 56px;
+  background-color: darkcyan;
+  margin-left: 15px;
+}
+
+.logo:first-child {
+  width: 56px;
+  height: 56px;
+  border: 3px dotted orange;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 22px;
+  padding-top: 4vh;
+  height: 12vh;
+  display: inline-block;
+  color: darkcyan;
+}
+
+/* Channel */
+.channels {
+  width: 28vw;
+  border-right: 1px solid grey;
+}
+
+.channel-title {
+  font-size: 15px;
+}
+
+.channel-list li {
+  height: 10vh;
+  list-style-type: none;
+  padding: calc((10vh - 16px) / 2);
+}
+
+/* Chat */
+.chat {
+  left: calc(28vw + 1px);
+  width: calc(100vw - 28vw);
+}
+
+button {
+  background-color: darkcyan;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.chat-bubble {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: lightgray;
+  font-size: 14px;
+}
+
+.user-bubble {
+  background-color: darkcyan;
+  color: white;
+}
+.input-box {
+  position: fixed;
+  top: 95vh;
+}

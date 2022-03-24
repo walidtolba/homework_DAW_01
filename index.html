@@ -5,55 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat Website</title>
-    <style>
-      * {
-        font-family: "Roboto", Arial, Helvetica, sans-serif;
-      }
-      h1,
-      h2 {
-        color: darkcyan;
-      }
-      h2 {
-        font-size: 14px;
-      }
-
-      .time {
-        font-weight: lighter;
-        font-size: 12px;
-      }
-
-      .channel-title {
-        font-weight: bold;
-      }
-
-      button {
-        background-color: darkcyan;
-        color: white;
-        text-transform: uppercase;
-        font-size: 15px;
-        font-weight: bold;
-      }
-
-      .chat-bubble p {
-        background: lightgray;
-      }
-      .channel-list ul {
-        padding: 0;
-      }
-      .channel-list li {
-        list-style-type: none;
-      }
-    </style>
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
     <!-- Channels: -->
     <section class="channels">
-      <div class="header"><h1>Chat Website</h1></div>
+      <div class="header">
+        <div class="logo"></div>
+        <h1>Chat Website</h1>
+      </div>
       <div class="channels-menu">
         <div class="channel-list">
           <h2>Favorites</h2>
           <ul>
-            <li>
+            <li class="highlighted">
               <span class="channel-title">Channel 1</span>
               <span class="time">11:52</span>
             </li>
@@ -93,28 +58,35 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto,
             reiciendis.
           </p>
-          <div class="time">11:45</div>
         </div>
-
+        <div class="time">11:45</div>
         <div class="chat-bubble">
           <h2>Salim</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto,
-            reiciendis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            illo similique aperiam ea expedita, dolorum veniam ad cumque modi!
+            Debitis!
           </p>
-          <div class="time">11:47</div>
         </div>
-
-        <div class="chat-bubble">
-          <h2>Salim</h2>
+        <div class="time">11:47</div>
+        <div class="chat-bubble user-bubble">
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto,
-            reiciendis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            commodi, magnam iure facere explicabo omnis. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Culpa sit voluptatem fugiat omnis
+            dicta iure recusandae molestiae iste velit, ab asperiores!
           </p>
-          <div class="time">11:55</div>
         </div>
       </div>
-
+      <div class="time">11:55</div>
+      <div class="chat-bubble">
+        <h2>Salim</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto,
+          reiciendis.
+        </p>
+      </div>
+      <div class="time">11:58</div>
       <div class="input-box">
         <input type="text" placeholder="Say something :)" /><button>
           Send
