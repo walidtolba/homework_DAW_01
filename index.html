@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat Website</title>
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
   </head>
   <body>
     <!-- Channels: -->
@@ -13,16 +17,19 @@
       <div class="header">
         <div class="logo"></div>
         <h1>Chat Website</h1>
+        <a class="floating-action-button">+</a>
       </div>
       <div class="channels-menu">
         <div class="channel-list">
           <h2>Favorites</h2>
           <ul>
             <li class="highlighted">
+              <i class="material-icons">group</i>
               <span class="channel-title">Channel 1</span>
               <span class="time">11:52</span>
             </li>
             <li>
+              <i class="material-icons">group</i>
               <span class="channel-title">Channel 2</span>
               <span class="time">10:55</span>
             </li>
@@ -32,10 +39,12 @@
           <h2>Regular</h2>
           <ul>
             <li>
+              <i class="material-icons">group</i>
               <span class="channel-title">Channel 3</span>
               <span class="time">yesterday</span>
             </li>
             <li>
+              <i class="material-icons">group</i>
               <span class="channel-title">Channel 4</span>
               <span class="time">23 May 2022</span>
             </li>
@@ -43,54 +52,73 @@
         </div>
       </div>
     </section>
-
     <!-- Chat: -->
     <section class="chat">
       <div class="header">
         <h1>Channel 1</h1>
-        <button class="fav-button">Favorite</button>
+        <div id="fav-button"><a class="material-icons">favorite_border</a></div>
       </div>
 
       <div class="chat-box">
-        <div class="chat-bubble">
-          <h2>Salim</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto,
-            reiciendis.
-          </p>
+        <div class="message-box">
+          <div class="material-icons account_circle">account_circle</div>
+          <div class="chat-bubble">
+            <h2>Salim</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto,
+              reiciendis.
+            </p>
+          </div>
+          <div class="time">11:45</div>
         </div>
-        <div class="time">11:45</div>
-        <div class="chat-bubble">
-          <h2>Salim</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            illo similique aperiam ea expedita, dolorum veniam ad cumque modi!
-            Debitis!
-          </p>
+        <div class="message-box">
+          <div class="material-icons account_circle">account_circle</div>
+          <div class="chat-bubble">
+            <h2>Salim</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              illo similique aperiam ea expedita, dolorum veniam ad cumque modi!
+              Debitis!
+            </p>
+          </div>
+          <div class="time">11:47</div>
         </div>
-        <div class="time">11:47</div>
-        <div class="chat-bubble user-bubble">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-            commodi, magnam iure facere explicabo omnis. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Culpa sit voluptatem fugiat omnis
-            dicta iure recusandae molestiae iste velit, ab asperiores!
-          </p>
+        <div class="message-box user-message">
+          <div class="material-icons account_circle">account_circle</div>
+          <div class="chat-bubble">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              commodi, magnam iure facere explicabo omnis. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Culpa sit voluptatem fugiat
+              omnis dicta iure recusandae molestiae iste velit, ab asperiores!
+            </p>
+          </div>
+
+          <div class="time">11:55</div>
+        </div>
+        <div class="message-box">
+          <div class="material-icons account_circle">account_circle</div>
+          <div class="chat-bubble">
+            <h2>Salim</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto,
+              reiciendis.
+            </p>
+          </div>
+          <div class="time">11:58</div>
         </div>
       </div>
-      <div class="time">11:55</div>
-      <div class="chat-bubble">
-        <h2>Salim</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto,
-          reiciendis.
-        </p>
-      </div>
-      <div class="time">11:58</div>
       <div class="input-box">
-        <input type="text" placeholder="Say something :)" /><button>
-          Send
-        </button>
+        <div class="material-icons emticon-button">insert_emoticon</div>
+        <div class="input-box-text">
+          <input
+            type="text"
+            minlength="1"
+            maxlength="500"
+            placeholder="Say Something :)"
+          />
+        </div>
+        <div class="material-icons button">send</div>
       </div>
     </section>
   </body>
